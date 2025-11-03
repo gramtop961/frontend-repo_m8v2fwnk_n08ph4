@@ -3,33 +3,33 @@ import { MessageSquare, TrendingUp, BookOpen, Mic2, ShieldCheck } from "lucide-r
 
 const topics = [
   {
-    title: "Geopolitics & Culture",
+    title: "Геополитика и культура",
     description:
-      "From soft power to cultural shifts — dissect narratives shaping the world.",
+      "От мягкой силы до культурных сдвигов — разбираем нарративы, меняющие мир.",
     icon: ShieldCheck,
   },
   {
-    title: "Tech & AI Ethics",
+    title: "Технологии и этика ИИ",
     description:
-      "Debate bias, alignment, creator economy, and the next wave of disruption.",
+      "Предвзятость, авторское право, создатели и экономика внимания — спорим аргументированно.",
     icon: TrendingUp,
   },
   {
-    title: "Work, Money, Life",
+    title: "Работа, деньги, жизнь",
     description:
-      "Career pivots, remote-first, financial independence, and mental performance.",
+      "Карьера, удалёнка, продуктивность и финансовая свобода на реальных примерах.",
     icon: MessageSquare,
   },
   {
-    title: "Literature & Media",
+    title: "Литература и медиа",
     description:
-      "Close-readings, longform essays, and media literacy in the attention era.",
+      "Близкое чтение, эссе, медиаграмотность и критическое мышление.",
     icon: BookOpen,
   },
   {
-    title: "Rhetoric & Debate",
+    title: "Риторика и дебаты",
     description:
-      "Sharpen delivery, framing, and rebuttals with fast-paced sparring.",
+      "Структурные споры, фрейминг, интонация и чёткие месседжи.",
     icon: Mic2,
   },
 ];
@@ -41,10 +41,10 @@ export default function TopicsGrid() {
         <div className="mb-8 flex items-end justify-between gap-6">
           <div>
             <h2 className="font-manrope text-3xl font-bold text-slate-900 md:text-4xl">
-              What we talk about
+              О чём говорим
             </h2>
             <p className="mt-2 max-w-2xl text-slate-600">
-              Curated, high-signal prompts updated weekly. Expect nuance, evidence, and strong opinions held lightly.
+              Обновляем сетку вопросов каждую неделю. Никакой воды — только факты, примеры и живой обмен.
             </p>
           </div>
         </div>

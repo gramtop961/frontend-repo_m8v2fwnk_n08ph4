@@ -4,8 +4,10 @@ import { Rocket, Globe, TrendingUp, Users } from "lucide-react";
 export default function HeroSection() {
   return (
     <section className="relative overflow-hidden">
-      {/* background gradient */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-indigo-50 via-white to-white" />
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute -left-24 -top-24 h-80 w-80 rounded-full bg-indigo-200/40 blur-3xl" />
+        <div className="absolute right-0 top-1/3 h-96 w-96 -translate-y-1/2 rounded-full bg-fuchsia-200/40 blur-3xl" />
+      </div>
 
       <div className="relative mx-auto max-w-6xl px-6 pt-20 pb-10">
         <div className="flex flex-col items-center text-center">
@@ -13,10 +15,10 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-white/70 px-4 py-1 text-sm text-indigo-700 shadow-sm backdrop-blur"
+            className="inline-flex items-center gap-2 rounded-full border border-indigo-200/70 bg-white/80 px-4 py-1 text-sm text-indigo-700 shadow-sm backdrop-blur"
           >
             <Rocket className="h-4 w-4" />
-            Advanced Speaking Club
+            SPARK SPEAK — клуб разговорного английского
           </motion.div>
 
           <motion.h1
@@ -25,7 +27,7 @@ export default function HeroSection() {
             transition={{ delay: 0.1, duration: 0.7 }}
             className="mt-6 font-manrope text-4xl font-extrabold leading-tight text-slate-900 md:text-6xl"
           >
-            C2 English Conversation Club
+            Живые дискуссии на английском для уровней B1–C2
           </motion.h1>
 
           <motion.p
@@ -34,7 +36,7 @@ export default function HeroSection() {
             transition={{ delay: 0.2, duration: 0.7 }}
             className="mt-4 max-w-2xl text-lg text-slate-600"
           >
-            Dive into sharp, real-world discussions around culture, tech, trends, and life. Designed for near-native speakers who want to stay razor-sharp.
+            Обсуждаем тренды, технологии, культуру и жизненные ситуации. Без скучных учебников — только реальная речь, аргументы и нюансы.
           </motion.p>
 
           <motion.div
@@ -47,13 +49,13 @@ export default function HeroSection() {
               href="#schedule"
               className="inline-flex items-center justify-center gap-2 rounded-lg bg-indigo-600 px-5 py-3 font-medium text-white shadow-sm transition hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
             >
-              Join the next session
+              Записаться на сессию
             </a>
             <a
               href="#topics"
               className="inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white px-5 py-3 font-medium text-slate-700 shadow-sm transition hover:bg-slate-50"
             >
-              Explore topics
+              Посмотреть темы
             </a>
           </motion.div>
 
@@ -63,10 +65,10 @@ export default function HeroSection() {
             transition={{ delay: 0.4, duration: 0.7 }}
             className="mt-10 grid w-full max-w-3xl grid-cols-2 gap-4 sm:grid-cols-4"
           >
-            <Stat icon={Globe} label="Global issues" />
-            <Stat icon={TrendingUp} label="Hot trends" />
-            <Stat icon={Users} label="C1–C2 peers" />
-            <Stat icon={Rocket} label="High-velocity practice" />
+            <Stat icon={Globe} label="Актуальная повестка" />
+            <Stat icon={TrendingUp} label="Тренды и технологии" />
+            <Stat icon={Users} label="Мини-группы" />
+            <Stat icon={Rocket} label="Быстрый прогресс" />
           </motion.div>
         </div>
       </div>
